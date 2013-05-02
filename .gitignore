@@ -4,3 +4,12 @@
 *.jar
 *.war
 *.ear
+
+# IDE files
+.project
+.classpath
+.settings/
+
+# Compilation directory
+target/
+target-eclipse/
