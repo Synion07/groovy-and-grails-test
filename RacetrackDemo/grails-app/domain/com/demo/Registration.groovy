@@ -1,15 +1,16 @@
 package com.demo
 
 class Registration {
-	String name
-	Date dateOfBirth
-	String gender
-	String address
-	String city
-	String state
-	String zipcode
-	String email
-	Date dateCreated //Note: this is a special name
 	
-	static constraints = {}
+	static constraints = {
+		race()
+		runner()
+		paid()
+		dateCreated()
+	}
+	
+	Boolean paid
+	Date dateCreated
+	
+	static belongsTo = [race: Race, runner: Runner]
 }

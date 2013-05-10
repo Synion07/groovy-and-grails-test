@@ -3,7 +3,6 @@ package com.demo
 
 
 import grails.test.mixin.*
-import org.junit.*
 
 import static org.hamcrest.CoreMatchers.*;
 
@@ -18,6 +17,6 @@ class RaceTests {
 		def race = new Race(distance: 5.0)
 		
 		// when
-		assertThat race.inMiles(), is(3.10700)
+		assertEquals race.inMiles(), 3.10700
     }
 }
